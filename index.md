@@ -15,6 +15,8 @@ This portfolio is a compilation of projects and notebooks which I have created f
 
 The purpose of this project was to create a simple interactive tool to optimize the asset allocation of a stock portfolio. I wanted to do an automatic data retrieval from Yahoo Finance and optimize the asset portfolio using my knowledge of portfolio optimization and investment science. [Markowitz model](https://en.wikipedia.org/wiki/Markowitz_model) was used for the implementation. Most of the difficulties came from learning frontend development (Flask, JS, HTML) from scratch and from using Google Cloud Platform (GCP). The UI of the tool is quite barebones as I was more interested in implementing the method rather than spending time on the UX.
 
+<center><img src="images/portfolio_opt.png"/></center>
+
 ### Course search tool for my university [![github_link](https://img.shields.io/badge/-Github-blueviolet?style=flat-square&logo=github&logoColor=white&link=https://github.com/johmakinen/University-course-search-tool)](https://github.com/johmakinen/University-course-search-tool)
 
 
