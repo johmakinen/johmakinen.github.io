@@ -1,108 +1,65 @@
-# Portfolio
----
-## Natural Language Processing
 
-### CS224n: Natural Language Processing with Deep Learning
 
-My complete implementation of assignments and projects in [***CS224n: Natural Language Processing with Deep Learning***](http://web.stanford.edu/class/cs224n/) by Stanford (Winter, 2019).
 
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/chriskhanhtran/CS224n-NLP-Solutions/tree/master/assignments/)
+# Data science portfolio by Johannes Mäkinen
 
-**Neural Machine Translation:** An NMT system which translates texts from Spanish to English using a Bidirectional LSTM encoder for the source sentence and a Unidirectional LSTM Decoder with multiplicative attention for the target sentence ([GitHub](https://github.com/chriskhanhtran/CS224n-NLP-Solutions/tree/master/assignments/)).
 
-**Dependency Parsing:** A Neural Transition-Based Dependency Parsing system with one-layer MLP ([GitHub](https://github.com/chriskhanhtran/CS224n-NLP-Assignments/tree/master/assignments/a3)).
 
-<center><img src="images/nlp.png"/></center>
+[![Linkedin: johmakinen](https://img.shields.io/badge/-Johannes%20Mäkinen-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/johmakinen/)](https://www.linkedin.com/in/johmakinen/)
 
----
-### Detect Non-negative Airline Tweets: BERT for Sentiment Analysis
+This portfolio is a compilation of projects and notebooks which I have created for data analysis or exploration of machine learning algorithms.
 
-[![Run in Google Colab](https://img.shields.io/badge/Colab-Run_in_Google_Colab-blue?logo=Google&logoColor=FDBA18)](https://colab.research.google.com/drive/1f32gj5IYIyFipoINiC8P3DvKat-WWLUK)
+## Stand-alone projects.
 
-<div style="text-align: justify">The release of Google's BERT is described as the beginning of a new era in NLP. In this notebook I'll use the HuggingFace's transformers library to fine-tune pretrained BERT model for a classification task. Then I will compare BERT's performance with a baseline model, in which I use a TF-IDF vectorizer and a Naive Bayes classifier. The transformers library helps us quickly and efficiently fine-tune the state-of-the-art BERT model and yield an accuracy rate 10% higher than the baseline model.</div>
+### Portfolio Optimization [![github_link](https://img.shields.io/badge/-Github-blueviolet?style=flat-square&logo=github&logoColor=white&link=https://github.com/johmakinen/Portfolio-Optimization)](https://github.com/johmakinen/Portfolio-Optimization)[![github_link](https://img.shields.io/badge/-GoogleCloud-blue?style=flat-square&logo=googlecloud&logoColor=white&link=https://portfolio-optimization-mhsj544yua-lz.a.run.app)](https://portfolio-optimization-mhsj544yua-lz.a.run.app)
 
-<center><img src="images/BERT-classification.png"/></center>
+The purpose of this project was to create a simple interactive tool to optimize the asset allocation of a stock portfolio. I wanted to do an automatic data retrieval from Yahoo Finance and optimize the asset portfolio using my knowledge of portfolio optimization and investment science. [Markowitz model](https://en.wikipedia.org/wiki/Markowitz_model) was used for the implementation. Most of the difficulties came from learning frontend development (Flask, JS, HTML) from scratch and from using Google Cloud Platform (GCP). The UI of the tool is quite barebones as I was more interested in implementing the method rather than spending time on the UX.
 
----
-### Detect Food Trends from Facebook Posts: Co-occurence Matrix, Lift and PPMI
+### Course search tool for my university [![github_link](https://img.shields.io/badge/-Github-blueviolet?style=flat-square&logo=github&logoColor=white&link=https://github.com/johmakinen/University-course-search-tool)](https://github.com/johmakinen/University-course-search-tool)
 
-[![Open Notebook](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](projects/detect-food-trends-facebook.html)
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/chriskhanhtran/facebook-detect-food-trends)
 
-<div style="text-align: justify">First I build co-occurence matrices of ingredients from Facebook posts from 2011 to 2015. Then, to identify interesting and rare ingredient combinations that occur more than by chance, I calculate Lift and PPMI metrics. Lastly, I plot time-series data of identified trends to validate my findings. Interesting food trends have emerged from this analysis.</div>
-<br>
-<center><img src="images/fb-food-trends.png"></center>
-<br>
+At the time of creation, you could not search courses for only certain periods. You could only search for courses that overlap the period you were searching; e.g. the problem was: "I want to see courses only in period 1, not courses that are in period 1 AND 1-2". This annoyed me and made my life much harder when trying to plan my courses ahead of time. Thus, I created a better way to search for courses at my university. The tool doesn't work for *you* as the university didn't allow me to publish the course data, but you can see the pipelines that I've created.
 
----
-### Detect Spam Messages: TF-IDF and Naive Bayes Classifier
 
-[![Open Notebook](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](projects/detect-spam-nlp.html)
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/chriskhanhtran/detect-spam-messages-nlp/blob/master/detect-spam-nlp.ipynb)
+## Separate notebooks for smaller projects.
 
-<div style="text-align: justify">In order to predict whether a message is spam, first I vectorized text messages into a format that machine learning algorithms can understand using Bag-of-Word and TF-IDF. Then I trained a machine learning model to learn to discriminate between normal and spam messages. Finally, with the trained model, I classified unlabel messages into normal or spam.</div>
-<br>
-<center><img src="images/detect-spam-nlp.png"/></center>
-<br>
+### Regression
 
----
-## Data Science
+#### Finnish house & apartment prices EDA and prediction [![github_link](https://img.shields.io/badge/-Github-blueviolet?style=flat-square&logo=github&logoColor=white&link=https://github.com/johmakinen/Various_projects/blob/main/Notebooks/House_prices.ipynb)](https://github.com/johmakinen/Various_projects/blob/main/Notebooks/House_prices.ipynb)[![github_link](https://img.shields.io/badge/-nbviewer-white?style=flat-square&logo=jupyter&logoColor=orange&link=https://nbviewer.org/github/johmakinen/Various_projects/blob/main/Notebooks/House_prices.ipynb)](https://nbviewer.org/github/johmakinen/Various_projects/blob/main/Notebooks/House_prices.ipynb)
 
-### Credit Risk Prediction Web App
+The purpose of this analysis is to look at real data from the capital area of Finland regarding multiple types of houses and apartments. We got the data using our self-built data scraper for Finnish house listings ([see here](https://github.com/johmakinen/Various_projects/blob/main/Notebooks/house_scraper.ipynb)). Then we performed Exploratory Data Analysis to see what insights we could get from the data. Afterwards, we implemented several models to predict the price of a house using given features like size, the year it was built and the area which it is within the Helsinki metropolitan area.
+Our models performed quite well, most notably the two-model approach, where we fit two models: one for low priced houses and one for the rest. The explained variance for each of the models was almost 90%.
+This analysis and these models could be used to make an informed decision on giving suggestion prices for people who are selling their houses.
+This could also be used by potential house buyers to see if the house they are looking at has the features to match the price, or if the seller trying to overprice the listing.
 
-[![Open Web App](https://img.shields.io/badge/Heroku-Open_Web_App-blue?logo=Heroku)](http://credit-risk.herokuapp.com/)
-[![Open Notebook](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](https://github.com/chriskhanhtran/credit-risk-prediction/blob/master/documents/Notebook.ipynb)
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/chriskhanhtran/credit-risk-prediction)
+#### Hotel booking demand prediction [![github_link](https://img.shields.io/badge/-Github-blueviolet?style=flat-square&logo=github&logoColor=white&link=https://github.com/johmakinen/Various_projects/blob/main/Notebooks/Hotel_bookings.ipynb)](https://github.com/johmakinen/Various_projects/blob/main/Notebooks/Hotel_bookings.ipynb)[![github_link](https://img.shields.io/badge/-nbviewer-white?style=flat-square&logo=jupyter&logoColor=orange&link=https://nbviewer.org/github/johmakinen/Various_projects/blob/main/Notebooks/Hotel_bookings.ipynb)](https://nbviewer.org/github/johmakinen/Various_projects/blob/main/Notebooks/Hotel_bookings.ipynb)
 
-<div style="text-align: justify">After my team preprocessed a dataset of 10K credit applications and built machine learning models to predict credit default risk, I built an interactive user interface with Streamlit and hosted the web app on Heroku server.</div>
-<br>
-<center><img src="images/credit-risk-webapp.png"/></center>
-<br>
+Demand prediction is an important part of revenue management. It is used to inform decision-makers about the resource demand and help them optimize revenue. At the time of writing this, I'm working as an Analyst for a large Healthcare company, in the Revenue Management team, so this analysis was quite related to my work. As I can't publish any sensitive data, I decided to get another dataset with hotel bookings. The main idea of the analysis is to implement a method of predicting the final reservation count on the date of arrival, using the booking curves as the features. As the reservations are usually done beforehand, the decision-makers always have the current Reservations On Hand (ROH). These ROHs are the time series that create the booking curves until the arrival date.   
+The model implemented in this analysis is XGBoost, which takes 180 features and outputs the final reservation count. After optimizing the hyperparameters, the model performs quite well. It can predict the next week's daily reservation counts with a MAPE of 8%, and MAE of 5 reservations. Using this demand prediction, the hotel managers could optimize their resource allocation, such as room cleaning staff or reception hours for each day, saving money and increasing profits.
 
----
-### Kaggle Competition: Predict Ames House Price using Lasso, Ridge, XGBoost and LightGBM
+### Classification
 
-[![Open Notebook](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](projects/ames-house-price.html)
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/chriskhanhtran/kaggle-house-price/blob/master/ames-house-price.ipynb)
+#### Predict churning customers [![github_link](https://img.shields.io/badge/-Github-blueviolet?style=flat-square&logo=github&logoColor=white&link=https://github.com/johmakinen/Various_projects/blob/main/Notebooks/Credit_card_churn.ipynb)](https://github.com/johmakinen/Various_projects/blob/main/Notebooks/Credit_card_churn.ipynb)[![github_link](https://img.shields.io/badge/-nbviewer-white?style=flat-square&logo=jupyter&logoColor=orange&link=https://nbviewer.org/github/johmakinen/Various_projects/blob/main/Notebooks/Credit_card_churn.ipynb)](https://nbviewer.org/github/johmakinen/Various_projects/blob/main/Notebooks/Credit_card_churn.ipynb)
 
-<div style="text-align: justify">I performed comprehensive EDA to understand important variables, handled missing values, outliers, performed feature engineering, and ensembled machine learning models to predict house prices. My best model had Mean Absolute Error (MAE) of 12293.919, ranking <b>95/15502</b>, approximately <b>top 0.6%</b> in the Kaggle leaderboard.</div>
-<br>
-<center><img src="images/ames-house-price.jpg"/></center>
-<br>
+In this analysis, I explored a [dataset](https://www.kaggle.com/sakshigoyal7/credit-card-customers) of credit card customers and then created a Gradient Boosting Classifier to predict whether a customer would be churning out. This is an important task for many businesses because you can directly improve profits if you can improve customer retention. Using my model, we could target the customers that are predicted to churn out, and give them more benefits or target them with lucrative campaigns so that they would not drop out. The implemented model has high accuracy (both Precision & Recall > 90%), but is also simple enough to be understood easily. Upsampling was used to tackle the problem of highly imbalanced data.
 
----
-### Predict Breast Cancer with RF, PCA and SVM using Python
 
-[![Open Notebook](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](projects/breast-cancer.html)
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/chriskhanhtran/predict-breast-cancer-with-rf-pca-svm/blob/master/breast-cancer.ipynb)
+### Miscellaneous
 
-<div style="text-align: justify">In this project I am going to perform comprehensive EDA on the breast cancer dataset, then transform the data using Principal Components Analysis (PCA) and use Support Vector Machine (SVM) model to predict whether a patient has breast cancer.</div>
-<br>
-<center><img src="images/breast-cancer.png"/></center>
-<br>
+#### House price data scraper [![github_link](https://img.shields.io/badge/-Github-blueviolet?style=flat-square&logo=github&logoColor=white&link=https://github.com/johmakinen/Various_projects/blob/main/Notebooks/house_scraper.ipynb)](https://github.com/johmakinen/Various_projects/blob/main/Notebooks/house_scraper.ipynb)[![github_link](https://img.shields.io/badge/-nbviewer-white?style=flat-square&logo=jupyter&logoColor=orange&link=https://nbviewer.org/github/johmakinen/Various_projects/blob/main/Notebooks/house_scraper.ipynb)](https://nbviewer.org/github/johmakinen/Various_projects/blob/main/Notebooks/house_scraper.ipynb)
 
----
-### Business Analytics Conference 2018: How is NYC's Government Using Money?
+I was not content with the data on house prices available in Finland, and thus I created a web scraper that could extract the prices of houses and apartments in any city of Finland. The scraper uses Selenium for the scraping and is implemented with an Object-Oriented Programming style. The data is then stored in an SQLite database for later use. SQLite was great for data storage in this case, as it was easy to implement but the framework was also flexible enough for concurrent use and updating. The scraper is implemented in a notebook and not in a separate .py-file, as it is simpler to follow the implementation. The hardest part of this project was the inconsistency of the data. You could have wildly different house listing information for each house, so I had to come up with error handling. This was particularly important as I didn't want to waste time losing thousands of observations due to an error.
 
-[![Open Research Poster](https://img.shields.io/badge/PDF-Open_Research_Poster-blue?logo=adobe-acrobat-reader&logoColor=white)](pdf/bac2018.pdf)
+#### Multiple Correspondence Analysis on sleeping pads (MCA) [![github_link](https://img.shields.io/badge/-Github-blueviolet?style=flat-square&logo=github&logoColor=white&link=https://github.com/johmakinen/MCA-on-sleeping-pads/blob/main/MCA_report.pdf)](https://github.com/johmakinen/MCA-on-sleeping-pads/blob/main/MCA_report.pdf)
 
-<div style="text-align: justify">In three-month research and a two-day hackathon, I led a team of four students to discover insights from 6 million records of NYC and Boston government spending data sets and won runner-up prize for the best research poster out of 18 participating colleges.</div>
-<br>
-<center><img src="images/bac2018.JPG"/></center>
-<br>
+I was in search of a new sleeping pad for my hiking trips. As a quite perfectionist, I usually want to analyse all the things that I'm about to buy, so that I'm not let down, waste money on subpar equipment or otherwise feel bad about my purchase later. Therefore, I analysed some common sleeping pads and figured out what kind of a pad would be a good buy. To do this, I preprocessed the data and applied [MCA](https://en.wikipedia.org/wiki/Multiple_correspondence_analysis) to get insights into the underlying structure of the data.
 
----
-## Filmed by me
+#### Optimal flight with a glider [![github_link](https://img.shields.io/badge/-Github-blueviolet?style=flat-square&logo=github&logoColor=white&link=https://github.com/johmakinen/Optimal-flight-with-a-glider/blob/main/Glider_project_pdf_full.pdf)](https://github.com/johmakinen/Optimal-flight-with-a-glider/blob/main/Glider_project_pdf_full.pdf)
 
-[![View My Films](https://img.shields.io/badge/YouTube-View_My_Films-grey?logo=youtube&labelColor=FF0000)](https://www.youtube.com/watch?v=vfZwdEWgUPE)
+This was a quite large school-related project, where we optimized the flight path (control policy) of a hang glider in different situations. The objective was to maximize the length of the glide in the direction of the x-axis. The project utilized dynamic optimization (control theory) and simulation using Matlab. [Direct collocation](https://en.wikipedia.org/wiki/Trajectory_optimization#Direct_collocation) and [Sequential quadratic programming](https://en.wikipedia.org/wiki/Sequential_quadratic_programming) were used to make the method more efficient.
 
-<div style="text-align: justify">Besides Data Science, I also have a great passion for photography and videography. Below is a list of films I documented to retain beautiful memories of places I traveled to and amazing people I met on the way.</div>
-<br>
+### Clustering
 
-- [Ada Von Weiss - You Regret (Winter at Niagara)](https://www.youtube.com/watch?v=-5esqvmPnHI)
-- [The Weight We Carry is Love - TORONTO](https://www.youtube.com/watch?v=vfZwdEWgUPE)
-- [In America - Boston 2017](https://www.youtube.com/watch?v=YdXufiebgyc)
-- [In America - We Call This Place Our Home (Massachusetts)](https://www.youtube.com/watch?v=jzfcM_iO0FU)
+### Natural language processing
 
----
-<center>© 2020 Khanh Tran. Powered by Jekyll and the Minimal Theme.</center>
+### Neural networks
