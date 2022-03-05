@@ -2,6 +2,7 @@
 
 
 # Portfolio
+---
 <!-- [![Linkedin: johmakinen](https://img.shields.io/badge/-Johannes%20Mäkinen-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/johmakinen/)](https://www.linkedin.com/in/johmakinen/) -->
 <!-- 
 This portfolio is a compilation of projects and notebooks which I have created for data analysis or exploration of machine learning algorithms.
@@ -15,6 +16,8 @@ The purpose of this project was to create a simple interactive tool to optimize 
 
 <center><img src="images/portfolio_opt.png"/></center>
 
+---
+
 ### Course search tool for my university
 [![github_link](https://img.shields.io/badge/-Github-blueviolet?logo=github&logoColor=white&link=https://github.com/johmakinen/University-course-search-tool)](https://github.com/johmakinen/University-course-search-tool)
 
@@ -22,6 +25,8 @@ The purpose of this project was to create a simple interactive tool to optimize 
 At the time of creation, you could not search courses for only certain periods. You could only search for courses that overlap the period you were searching; e.g. the problem was: "I want to see courses only in period 1, not courses that are in period 1 AND 1-2". This annoyed me and made my life much harder when trying to plan my courses ahead of time. Thus, I created a better way to search for courses at my university. The tool doesn't work for *you* as the university didn't allow me to publish the course data, but you can see the pipelines that I've created.
 
 <center><img src="images/course_figure_cmd.png"/></center>
+
+---
 
 ## Regression
 
@@ -36,6 +41,8 @@ This could also be used by potential house buyers to see if the house they are l
 
 <center><img src="images/house_prices_pred.png"/></center>
 
+---
+
 ### Hotel booking demand prediction
 [![github_link](https://img.shields.io/badge/-Github-blueviolet?logo=github&logoColor=white&link=https://github.com/johmakinen/Various_projects/blob/main/Notebooks/Hotel_bookings.ipynb)](https://github.com/johmakinen/Various_projects/blob/main/Notebooks/Hotel_bookings.ipynb)
 [![github_link](https://img.shields.io/badge/-nbviewer-gray?logo=jupyter&logoColor=orange&link=https://nbviewer.org/github/johmakinen/Various_projects/blob/main/Notebooks/Hotel_bookings.ipynb)](https://nbviewer.org/github/johmakinen/Various_projects/blob/main/Notebooks/Hotel_bookings.ipynb)
@@ -44,6 +51,8 @@ Demand prediction is an important part of revenue management. It is used to info
 The model implemented in this analysis is XGBoost, which takes 180 features and outputs the final reservation count. After optimizing the hyperparameters, the model performs quite well. It can predict the next week's daily reservation counts with a MAPE of 8%, and MAE of 5 reservations. Using this demand prediction, the hotel managers could optimize their resource allocation, such as room cleaning staff or reception hours for each day, saving money and increasing profits.
 
 <center><img src="images/combined_figs_hotel.png"/></center>
+
+---
 
 ## Classification
 
@@ -55,6 +64,8 @@ In this analysis, I explored a [dataset](https://www.kaggle.com/sakshigoyal7/cre
 
 <center><img src="images/combined_figs_churn.png"/></center>
 
+---
+
 ## Miscellaneous
 
 ### House price data scraper
@@ -63,6 +74,8 @@ In this analysis, I explored a [dataset](https://www.kaggle.com/sakshigoyal7/cre
 
 I was not content with the data on house prices available in Finland, and thus I created a web scraper that could extract the prices of houses and apartments in any city of Finland. The scraper uses Selenium for the scraping and is implemented with an Object-Oriented Programming style. The data is then stored in an SQLite database for later use. SQLite was great for data storage in this case, as it was easy to implement but the framework was also flexible enough for concurrent use and updating. The scraper is implemented in a notebook and not in a separate .py-file, as it is simpler to follow the implementation. The hardest part of this project was the inconsistency of the data. You could have wildly different house listing information for each house, so I had to come up with error handling. This was particularly important as I didn't want to waste time losing thousands of observations due to an error.
 
+---
+
 ### Multiple Correspondence Analysis on sleeping pads (MCA)
 [![github_link](https://img.shields.io/badge/-Github-blueviolet?logo=github&logoColor=white&link=https://github.com/johmakinen/MCA-on-sleeping-pads/blob/main/MCA_report.pdf)](https://github.com/johmakinen/MCA-on-sleeping-pads/blob/main/MCA_report.pdf)
 
@@ -70,10 +83,14 @@ I was in search of a new sleeping pad for my hiking trips. As a quite perfection
 
 <center><img src="images/mca_figure - Copy.png"/></center>
 
+---
+
 ### Optimal flight with a glider
 [![github_link](https://img.shields.io/badge/-Github-blueviolet?logo=github&logoColor=white&link=https://github.com/johmakinen/Optimal-flight-with-a-glider/blob/main/Glider_project_pdf_full.pdf)](https://github.com/johmakinen/Optimal-flight-with-a-glider/blob/main/Glider_project_pdf_full.pdf)
 
 This was a quite large school-related project, where we optimized the flight path (control policy) of a hang glider in different situations. The objective was to maximize the length of the glide in the direction of the x-axis. The project utilized dynamic optimization (control theory) and simulation using Matlab. [Direct collocation](https://en.wikipedia.org/wiki/Trajectory_optimization#Direct_collocation) and [Sequential quadratic programming](https://en.wikipedia.org/wiki/Sequential_quadratic_programming) were used to make the method more efficient.
+
+---
 
 # TODO:
 ## Clustering
