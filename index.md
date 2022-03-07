@@ -49,9 +49,7 @@ This could also be used by potential house buyers to see if the house they are l
 
 Demand prediction is an important part of revenue management. It is used to inform decision-makers about the resource demand and help them optimize revenue. At the time of writing this, I'm working as an Analyst for a large Healthcare company, in the Revenue Management team, so this analysis was quite related to my work. As I can't publish any sensitive data, I decided to get another dataset with hotel bookings. The main idea of the analysis is to implement a method of predicting the final reservation count on the date of arrival, using the booking curves as the features. As the reservations are usually done beforehand, the decision-makers always have the current Reservations On Hand (ROH). These ROHs are the time series that create the booking curves until the arrival date.   
 The model implemented in this analysis is XGBoost, which takes 180 features and outputs the final reservation count. After optimizing the hyperparameters, the model performs quite well. It can predict the next week's daily reservation counts with a MAPE of 8%, and MAE of 5 reservations. Using this demand prediction, the hotel managers could optimize their resource allocation, such as room cleaning staff or reception hours for each day, saving money and increasing profits.
-
 <center><img src="images/combined_figs_hotel2.png"/></center>
-
 ---
 
 ## Classification
@@ -61,9 +59,7 @@ The model implemented in this analysis is XGBoost, which takes 180 features and 
 [![github_link](https://img.shields.io/badge/-nbviewer-gray?logo=jupyter&logoColor=orange&link=https://nbviewer.org/github/johmakinen/Various_projects/blob/main/Notebooks/Credit_card_churn.ipynb)](https://nbviewer.org/github/johmakinen/Various_projects/blob/main/Notebooks/Credit_card_churn.ipynb)
 
 In this analysis, I explored a [dataset](https://www.kaggle.com/sakshigoyal7/credit-card-customers) of credit card customers and then created a Gradient Boosting Classifier to predict whether a customer would be churning out. This is an important task for many businesses because you can directly improve profits if you can improve customer retention. Using my model, we could target the customers that are predicted to churn out, and give them more benefits or target them with lucrative campaigns so that they would not drop out. The implemented model has high accuracy (both Precision & Recall > 90%), but is also simple enough to be understood easily. Upsampling was used to tackle the problem of highly imbalanced data.
-
-<center><img src="images/combined_figs_churn2.png"/></center>
-
+<center><img src="images/combined_figs_churn.png"/></center>
 ---
 
 ## Miscellaneous
