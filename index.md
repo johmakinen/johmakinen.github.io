@@ -12,7 +12,7 @@ This portfolio is a compilation of projects and notebooks which I have created f
 ### Portfolio Optimization
 [![github_link](https://img.shields.io/badge/-Github-blueviolet?logo=github&logoColor=white&link=https://github.com/johmakinen/Portfolio-Optimization)](https://github.com/johmakinen/Portfolio-Optimization)[![github_link](https://img.shields.io/badge/-GoogleCloud-blue?logo=googlecloud&logoColor=white&link=https://portfolio-optimization-mhsj544yua-lz.a.run.app)](https://portfolio-optimization-mhsj544yua-lz.a.run.app)
 
-The purpose of this project was to create a simple interactive tool to optimize the asset allocation of a stock portfolio. I wanted to do an automatic data retrieval from Yahoo Finance and optimize the asset portfolio using my knowledge of portfolio optimization and investment science. [Markowitz model](https://en.wikipedia.org/wiki/Markowitz_model) was used for the implementation. Most of the difficulties came from learning frontend development (Flask, JS, HTML) from scratch and from using Google Cloud Platform (GCP). The UI of the tool is quite barebones as I was more interested in implementing the method rather than spending time on the UX.
+The purpose of this project was to create a simple interactive tool to optimize the asset allocation of a stock portfolio. I wanted to do an automatic data retrieval from Yahoo Finance and optimize the asset portfolio using my knowledge of portfolio optimization and investment science. [Markowitz model](https://en.wikipedia.org/wiki/Markowitz_model) was used for the implementation. Most of the difficulties came from learning frontend development (Flask, JS, HTML) from scratch and from using Google Cloud Platform (GCP).
 
 <center><img src="images/portfolio_opt.png" width="600" height="auto"/></center>
 
@@ -22,7 +22,7 @@ The purpose of this project was to create a simple interactive tool to optimize 
 [![github_link](https://img.shields.io/badge/-Github-blueviolet?logo=github&logoColor=white&link=https://github.com/johmakinen/University-course-search-tool)](https://github.com/johmakinen/University-course-search-tool)
 
 
-At the time of creation, you could not search courses for only certain periods. You could only search for courses that overlap the period you were searching; e.g. the problem was: "I want to see courses only in period 1, not courses that are in period 1 AND 1-2". This annoyed me and made my life much harder when trying to plan my courses ahead of time. Thus, I created a better way to search for courses at my university. The tool doesn't work for *you* as the university didn't allow me to publish the course data, but you can see the pipelines that I've created.
+At the time of creation, you could not search courses for only certain periods. You could only search for courses that overlap the period you were searching; e.g. the problem was: "I want to see courses only in period 1, not courses that are in period 1 AND 1-2". This made my life much harder when trying to plan my courses ahead of time. Thus, I created a better way to search for courses at my university. The tool doesn't work for *you* as the university didn't allow me to publish the course data, but you can see the pipelines that I've created.
 
 <center><img src="images/course_figure_cmd.png" width="600" height="auto"/></center>
 
@@ -47,8 +47,8 @@ This could also be used by potential house buyers to see if the house they are l
 [![github_link](https://img.shields.io/badge/-Github-blueviolet?logo=github&logoColor=white&link=https://github.com/johmakinen/Various_projects/blob/main/Notebooks/Hotel_bookings.ipynb)](https://github.com/johmakinen/Various_projects/blob/main/Notebooks/Hotel_bookings.ipynb)
 [![github_link](https://img.shields.io/badge/-nbviewer-gray?logo=jupyter&logoColor=orange&link=https://nbviewer.org/github/johmakinen/Various_projects/blob/main/Notebooks/Hotel_bookings.ipynb)](https://nbviewer.org/github/johmakinen/Various_projects/blob/main/Notebooks/Hotel_bookings.ipynb)
 
-Demand prediction is an important part of revenue management. It is used to inform decision-makers about the resource demand and help them optimize revenue. At the time of writing this, I'm working as an Analyst for a large Healthcare company, in the Revenue Management team, so this analysis was quite related to my work. As I can't publish any sensitive data, I decided to get another dataset with hotel bookings. The main idea of the analysis is to implement a method of predicting the final reservation count on the date of arrival, using the booking curves as the features. As the reservations are usually done beforehand, the decision-makers always have the current Reservations On Hand (ROH). These ROHs are the time series that create the booking curves until the arrival date.   
-The model implemented in this analysis is XGBoost, which takes 180 features and outputs the final reservation count. After optimizing the hyperparameters, the model performs quite well. It can predict the next week's daily reservation counts with a MAPE of 8%, and MAE of 5 reservations. Using this demand prediction, the hotel managers could optimize their resource allocation, such as room cleaning staff or reception hours for each day, saving money and increasing profits.
+Demand prediction is an important part of revenue management. It is used to inform decision-makers about the resource demand and help them optimize revenue. The main idea of the analysis is to implement a method of predicting the final reservation count on the date of arrival, using the booking curves as the features. As the reservations are usually done beforehand, the decision-makers always have the current Reservations On Hand (ROH). These ROHs are the time series that create the booking curves until the arrival date.   
+The model implemented in this analysis is XGBoost, which takes 180 features and outputs the final reservation count. XGBoost is used due to its ability to natively handle missing values, which the booking curves will always have. This is better than fitting multiple models for different booking curve lengths. After optimizing the hyperparameters, the model performs quite well. It can predict the next week's daily reservation counts with a MAPE of 8%, and MAE of 5 reservations. Using this demand prediction, the hotel managers could optimize their resource allocation, such as room cleaning staff or reception hours for each day, saving money and increasing profits.
 <center><img src="images/combined_figs_hotel.png" width="600" height="auto"/></center>
 ---
 
@@ -88,9 +88,3 @@ This was a quite large school-related project, where we optimized the flight pat
 
 ---
 
-# TODO:
-## Clustering
-
-## Natural language processing
-
-## Neural networks
