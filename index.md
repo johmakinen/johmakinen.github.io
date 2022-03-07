@@ -14,7 +14,7 @@ This portfolio is a compilation of projects and notebooks which I have created f
 
 The purpose of this project was to create a simple interactive tool to optimize the asset allocation of a stock portfolio. I wanted to do an automatic data retrieval from Yahoo Finance and optimize the asset portfolio using my knowledge of portfolio optimization and investment science. [Markowitz model](https://en.wikipedia.org/wiki/Markowitz_model) was used for the implementation. Most of the difficulties came from learning frontend development (Flask, JS, HTML) from scratch and from using Google Cloud Platform (GCP). The UI of the tool is quite barebones as I was more interested in implementing the method rather than spending time on the UX.
 
-<center><img src="images/portfolio_opt2.png"/></center>
+<center><img src="images/portfolio_opt.png"/></center>
 
 ---
 
@@ -24,7 +24,7 @@ The purpose of this project was to create a simple interactive tool to optimize 
 
 At the time of creation, you could not search courses for only certain periods. You could only search for courses that overlap the period you were searching; e.g. the problem was: "I want to see courses only in period 1, not courses that are in period 1 AND 1-2". This annoyed me and made my life much harder when trying to plan my courses ahead of time. Thus, I created a better way to search for courses at my university. The tool doesn't work for *you* as the university didn't allow me to publish the course data, but you can see the pipelines that I've created.
 
-<center><img src="images/course_figure_cmd2.png"/></center>
+<center><img src="images/course_figure_cmd.png"/></center>
 
 ---
 
@@ -39,7 +39,7 @@ Our models performed quite well, most notably the two-model approach, where we f
 This analysis and these models could be used to make an informed decision on giving suggestion prices for people who are selling their houses.
 This could also be used by potential house buyers to see if the house they are looking at has the features to match the price, or if the seller trying to overprice the listing.
 
-<center><img src="images/house_prices_pred2.png"/></center>
+<center><img src="images/house_prices_pred.png"/></center>
 
 ---
 
@@ -49,7 +49,7 @@ This could also be used by potential house buyers to see if the house they are l
 
 Demand prediction is an important part of revenue management. It is used to inform decision-makers about the resource demand and help them optimize revenue. At the time of writing this, I'm working as an Analyst for a large Healthcare company, in the Revenue Management team, so this analysis was quite related to my work. As I can't publish any sensitive data, I decided to get another dataset with hotel bookings. The main idea of the analysis is to implement a method of predicting the final reservation count on the date of arrival, using the booking curves as the features. As the reservations are usually done beforehand, the decision-makers always have the current Reservations On Hand (ROH). These ROHs are the time series that create the booking curves until the arrival date.   
 The model implemented in this analysis is XGBoost, which takes 180 features and outputs the final reservation count. After optimizing the hyperparameters, the model performs quite well. It can predict the next week's daily reservation counts with a MAPE of 8%, and MAE of 5 reservations. Using this demand prediction, the hotel managers could optimize their resource allocation, such as room cleaning staff or reception hours for each day, saving money and increasing profits.
-<center><img src="images/combined_figs_hotel2.png"/></center>
+<center><img src="images/combined_figs_hotel.png"/></center>
 ---
 
 ## Classification
@@ -77,7 +77,7 @@ I was not content with the data on house prices available in Finland, and thus I
 
 I was in search of a new sleeping pad for my hiking trips. As a quite perfectionist, I usually want to analyse all the things that I'm about to buy, so that I'm not let down, waste money on subpar equipment or otherwise feel bad about my purchase later. Therefore, I analysed some common sleeping pads and figured out what kind of a pad would be a good buy. To do this, I preprocessed the data and applied [MCA](https://en.wikipedia.org/wiki/Multiple_correspondence_analysis) to get insights into the underlying structure of the data.
 
-<center><img src="images/mca_figure2.png"/></center>
+<center><img src="images/mca_figure.png"/></center>
 
 ---
 
