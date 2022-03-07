@@ -7,7 +7,7 @@
 <!-- 
 This portfolio is a compilation of projects and notebooks which I have created for data analysis or exploration of machine learning algorithms.
  -->
-## Stand-alone projects.
+## Stand-alone projects
 
 ### Portfolio Optimization
 [![github_link](https://img.shields.io/badge/-Github-blueviolet?logo=github&logoColor=white&link=https://github.com/johmakinen/Portfolio-Optimization)](https://github.com/johmakinen/Portfolio-Optimization)[![github_link](https://img.shields.io/badge/-GoogleCloud-blue?logo=googlecloud&logoColor=white&link=https://portfolio-optimization-mhsj544yua-lz.a.run.app)](https://portfolio-optimization-mhsj544yua-lz.a.run.app)
