@@ -14,7 +14,7 @@ This portfolio is a compilation of projects and notebooks which I have created f
 
 The purpose of this project was to create a simple interactive tool to optimize the asset allocation of a stock portfolio. I wanted to do an automatic data retrieval from Yahoo Finance and optimize the asset portfolio using my knowledge of portfolio optimization and investment science. [Markowitz model](https://en.wikipedia.org/wiki/Markowitz_model) was used for the implementation. Most of the difficulties came from learning frontend development (Flask, JS, HTML) from scratch and from using Google Cloud Platform (GCP). The UI of the tool is quite barebones as I was more interested in implementing the method rather than spending time on the UX.
 
-<center><img src="images/portfolio_opt.png"/></center>
+<center><img src="images/portfolio_opt.png" width="200" height="200"/></center>
 
 ---
 
@@ -24,7 +24,7 @@ The purpose of this project was to create a simple interactive tool to optimize 
 
 At the time of creation, you could not search courses for only certain periods. You could only search for courses that overlap the period you were searching; e.g. the problem was: "I want to see courses only in period 1, not courses that are in period 1 AND 1-2". This annoyed me and made my life much harder when trying to plan my courses ahead of time. Thus, I created a better way to search for courses at my university. The tool doesn't work for *you* as the university didn't allow me to publish the course data, but you can see the pipelines that I've created.
 
-<center><img src="images/course_figure_cmd.png"/></center>
+<center><img src="images/course_figure_cmd.png" width="200" height="100"/></center>
 
 ---
 
@@ -39,7 +39,7 @@ Our models performed quite well, most notably the two-model approach, where we f
 This analysis and these models could be used to make an informed decision on giving suggestion prices for people who are selling their houses.
 This could also be used by potential house buyers to see if the house they are looking at has the features to match the price, or if the seller trying to overprice the listing.
 
-<center><img src="images/house_prices_pred.png"/></center>
+<center><img src="images/house_prices_pred.png" width="400" height="300"/></center>
 
 ---
 
