@@ -36,8 +36,17 @@ At the time of creation, you could not search courses for only certain periods. 
 <center><img src="images/course_figure_cmd.png" width="600" height="auto"/></center>
 
 ---
-
 ## Regression
+
+### Hotel booking demand prediction
+[![github_link](https://img.shields.io/badge/-Github-blueviolet?logo=github&logoColor=white)](https://github.com/johmakinen/Various_projects/blob/main/Notebooks/Hotel_bookings.ipynb)
+[![github_link](https://img.shields.io/badge/-nbviewer-gray?logo=jupyter&logoColor=orange)](https://nbviewer.org/github/johmakinen/Various_projects/blob/main/Notebooks/Hotel_bookings.ipynb)
+
+Demand prediction is an important part of revenue management. It is used to inform decision-makers about the resource demand and help them optimize revenue. The main idea of the analysis is to implement a method of predicting the final reservation count on the date of arrival, using the booking curves as the features. As the reservations are usually done beforehand, the decision-makers always have the current Reservations On Hand (ROH). These ROHs are the time series that create the booking curves until the arrival date.   
+The model implemented in this analysis is XGBoost, which takes 180 features and outputs the final reservation count. XGBoost is used due to its ability to natively handle missing values, which the booking curves will always have. This is better than fitting multiple models for different booking curve lengths. After optimizing the hyperparameters, the model performs quite well. It can predict the next week's daily reservation counts with a MAPE of 8%, and MAE of 5 reservations. Using this demand prediction, the hotel managers could optimize their resource allocation, such as room cleaning staff or reception hours for each day, saving money and increasing profits.
+<center><img src="images/combined_figs_hotel.png" width="600" height="auto"/></center>
+
+---
 
 ### Finnish house & apartment prices EDA and prediction
 [![github_link](https://img.shields.io/badge/-Github-blueviolet?logo=github&logoColor=white)](https://github.com/johmakinen/Various_projects/blob/main/Notebooks/House_prices.ipynb)
@@ -50,15 +59,6 @@ This could also be used by potential house buyers to see if the house they are l
 
 <center><img src="images/house_prices_pred.png" width="600" height="auto"/></center>
 
----
-
-### Hotel booking demand prediction
-[![github_link](https://img.shields.io/badge/-Github-blueviolet?logo=github&logoColor=white)](https://github.com/johmakinen/Various_projects/blob/main/Notebooks/Hotel_bookings.ipynb)
-[![github_link](https://img.shields.io/badge/-nbviewer-gray?logo=jupyter&logoColor=orange)](https://nbviewer.org/github/johmakinen/Various_projects/blob/main/Notebooks/Hotel_bookings.ipynb)
-
-Demand prediction is an important part of revenue management. It is used to inform decision-makers about the resource demand and help them optimize revenue. The main idea of the analysis is to implement a method of predicting the final reservation count on the date of arrival, using the booking curves as the features. As the reservations are usually done beforehand, the decision-makers always have the current Reservations On Hand (ROH). These ROHs are the time series that create the booking curves until the arrival date.   
-The model implemented in this analysis is XGBoost, which takes 180 features and outputs the final reservation count. XGBoost is used due to its ability to natively handle missing values, which the booking curves will always have. This is better than fitting multiple models for different booking curve lengths. After optimizing the hyperparameters, the model performs quite well. It can predict the next week's daily reservation counts with a MAPE of 8%, and MAE of 5 reservations. Using this demand prediction, the hotel managers could optimize their resource allocation, such as room cleaning staff or reception hours for each day, saving money and increasing profits.
-<center><img src="images/combined_figs_hotel.png" width="600" height="auto"/></center>
 ---
 
 ## Classification
