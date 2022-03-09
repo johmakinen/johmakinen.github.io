@@ -10,22 +10,21 @@ This portfolio is a compilation of projects and notebooks which I have created f
 ## Stand-alone projects
 
 ### Portfolio Optimization
-[![github_link](https://img.shields.io/badge/-Github-blueviolet?logo=github&logoColor=white&link=https://github.com/johmakinen/Portfolio-Optimization)](https://github.com/johmakinen/Portfolio-Optimization)[![github_link](https://img.shields.io/badge/-GoogleCloud-blue?logo=googlecloud&logoColor=white&link=https://portfolio-optimization-mhsj544yua-lz.a.run.app)](https://portfolio-optimization-mhsj544yua-lz.a.run.app)
+[![github_link](https://img.shields.io/badge/-Github-blueviolet?logo=github&logoColor=white)](https://github.com/johmakinen/Portfolio-Optimization)[![github_link](https://img.shields.io/badge/-GoogleCloud-blue?logo=googlecloud&logoColor=white)](https://portfolio-optimization-mhsj544yua-lz.a.run.app)
 
 The purpose of this project was to create a simple interactive tool to optimize the asset allocation of a stock portfolio. I wanted to do an automatic data retrieval from Yahoo Finance and optimize the asset portfolio using my knowledge of portfolio optimization and investment science. [Markowitz model](https://en.wikipedia.org/wiki/Markowitz_model) was used for the implementation. Most of the difficulties came from learning frontend development (Flask, JS, HTML) from scratch and from using Google Cloud Platform (GCP).
 
 <center><img src="images/portfolio_opt.png" width="600" height="auto"/></center>
 
---- https://share.streamlit.io/johmakinen/hdi_dashboard/main/dashboard.py
+--- 
 
 ### Dashboard for Human Development Index
 [![github_link](https://img.shields.io/badge/-Github-blueviolet?logo=github&logoColor=white)](https://github.com/johmakinen/HDI_Dashboard)[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/johmakinen/hdi_dashboard/main/dashboard.py)
 
+This was mostly a learning project. The goal was to 1. Implement and deploy a dashboard app using Streamlit, 2. Apply small unit tests, 3. Test a new folder structure for stand-alone projects. All of these goals were achieved, and the dashboard is up and running. Streamlit was amazingly simple to use and deploy, as it is intended to be. Though, the cost of such simplicity is the loss of flexibility. Unit tests were quite naive and small, but at the time of writing this, I was doing lots of unit tests for my High Performance Computing course and wanted to apply them in my projects. The new folder structure is more efficient to use and it keeps the structure of the whole project coherent. I sense that I will be using this structure for future projects.
 
 
-At the time of creation, you could not search courses for only certain periods. You could only search for courses that overlap the period you were searching; e.g. the problem was: "I want to see courses only in period 1, not courses that are in period 1 AND 1-2". This made my life much harder when trying to plan my courses ahead of time. Thus, I created a better way to search for courses at my university. The tool doesn't work for *you* as the university didn't allow me to publish the course data, but you can see the pipelines that I've created.
-
-<center><img src="images/course_figure_cmd.png" width="600" height="auto"/></center>
+<center><img src="images/hdi_map.png" width="600" height="auto"/></center>
 
 
 ---
