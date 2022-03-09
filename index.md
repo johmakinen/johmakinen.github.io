@@ -16,6 +16,18 @@ The purpose of this project was to create a simple interactive tool to optimize 
 
 <center><img src="images/portfolio_opt.png" width="600" height="auto"/></center>
 
+--- https://share.streamlit.io/johmakinen/hdi_dashboard/main/dashboard.py
+
+### Dashboard for Human Development Index
+[![github_link](https://img.shields.io/badge/-Github-blueviolet?logo=github&logoColor=white)](https://github.com/johmakinen/HDI_Dashboard)[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/johmakinen/hdi_dashboard/main/dashboard.py)
+
+
+
+At the time of creation, you could not search courses for only certain periods. You could only search for courses that overlap the period you were searching; e.g. the problem was: "I want to see courses only in period 1, not courses that are in period 1 AND 1-2". This made my life much harder when trying to plan my courses ahead of time. Thus, I created a better way to search for courses at my university. The tool doesn't work for *you* as the university didn't allow me to publish the course data, but you can see the pipelines that I've created.
+
+<center><img src="images/course_figure_cmd.png" width="600" height="auto"/></center>
+
+
 ---
 
 ### Course search tool for my university
