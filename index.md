@@ -9,6 +9,16 @@ This portfolio is a compilation of projects and notebooks which I have created f
  -->
 ## Stand-alone projects
 
+### Automatic Data Imputer app
+#### [Work in progress, not deployed yet]
+[![github_link](https://img.shields.io/badge/-Github-blueviolet?logo=github&logoColor=white)](https://github.com/johmakinen/AutoImputer)
+
+Imputing missing values is a common task for people working with data. To ease this, I created an app where users can impute their data using simple Streamlit app, without spending too much time on data wrangling, or needing to learn programming.
+
+<!-- <center><img src="images/portfolio_opt.png" width="600" height="auto"/></center> -->
+
+--- 
+
 ### Portfolio Optimization
 [![github_link](https://img.shields.io/badge/-Github-blueviolet?logo=github&logoColor=white)](https://github.com/johmakinen/Portfolio-Optimization)[![github_link](https://img.shields.io/badge/-GoogleCloud-blue?logo=googlecloud&logoColor=white)](https://portfolio-optimization-mhsj544yua-lz.a.run.app)
 
@@ -18,24 +28,7 @@ The purpose of this project was to create a simple interactive tool to optimize 
 
 --- 
 
-### Dashboard for Human Development Index
-[![github_link](https://img.shields.io/badge/-Github-blueviolet?logo=github&logoColor=white)](https://github.com/johmakinen/HDI_Dashboard)[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/johmakinen/hdi_dashboard/main/dashboard.py)
 
-This was mostly a learning project. The goal was to 1. Implement and deploy a dashboard app using Streamlit, 2. Apply small unit tests, 3. Test a new folder structure for stand-alone projects. All of these goals were achieved, and the dashboard is up and running. Streamlit was amazingly simple to use and deploy, as it is intended to be. Though, the cost of such simplicity is the loss of flexibility. Unit tests were quite naive and small, but at the time of writing this, I was doing lots of unit tests for my High Performance Computing course and wanted to apply them in my projects. The new folder structure is more efficient to use and it keeps the structure of the whole project coherent. I sense that I will be using this structure for future projects.
-
-<center><img src="images/hdi_map.png" width="600" height="auto"/></center>
-
----
-
-### Course search tool for my university
-[![github_link](https://img.shields.io/badge/-Github-blueviolet?logo=github&logoColor=white)](https://github.com/johmakinen/University-course-search-tool)
-
-
-At the time of creation, you could not search courses for only certain periods. You could only search for courses that overlap the period you were searching; e.g. the problem was: "I want to see courses only in period 1, not courses that are in period 1 AND 1-2". This made my life much harder when trying to plan my courses ahead of time. Thus, I created a better way to search for courses at my university. The tool doesn't work for *you* as the university didn't allow me to publish the course data, but you can see the pipelines that I've created.
-
-<center><img src="images/course_figure_cmd.png" width="600" height="auto"/></center>
-
----
 ## Regression
 
 ### Hotel booking demand prediction
@@ -87,6 +80,25 @@ I was not content with the data on house prices available in Finland, and thus I
 I was in search of a new sleeping pad for my hiking trips. As a quite perfectionist, I usually want to analyse all the things that I'm about to buy, so that I'm not let down, waste money on subpar equipment or otherwise feel bad about my purchase later. Therefore, I analysed some common sleeping pads and figured out what kind of a pad would be a good buy. To do this, I preprocessed the data and applied [MCA](https://en.wikipedia.org/wiki/Multiple_correspondence_analysis) to get insights into the underlying structure of the data.
 
 <center><img src="images/mca_figure.png" width="600" height="auto"/></center>
+
+---
+
+### Dashboard for Human Development Index
+[![github_link](https://img.shields.io/badge/-Github-blueviolet?logo=github&logoColor=white)](https://github.com/johmakinen/HDI_Dashboard)[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/johmakinen/hdi_dashboard/main/dashboard.py)
+
+This was mostly a learning project. The goal was to 1. Implement and deploy a dashboard app using Streamlit, 2. Apply small unit tests, 3. Test a new folder structure for stand-alone projects. All of these goals were achieved, and the dashboard is up and running. Streamlit was amazingly simple to use and deploy, as it is intended to be. Though, the cost of such simplicity is the loss of flexibility. Unit tests were quite naive and small, but at the time of writing this, I was doing lots of unit tests for my High Performance Computing course and wanted to apply them in my projects. The new folder structure is more efficient to use and it keeps the structure of the whole project coherent. I sense that I will be using this structure for future projects.
+
+<center><img src="images/hdi_map.png" width="600" height="auto"/></center>
+
+---
+
+### Course search tool for my university
+[![github_link](https://img.shields.io/badge/-Github-blueviolet?logo=github&logoColor=white)](https://github.com/johmakinen/University-course-search-tool)
+
+
+At the time of creation, you could not search courses for only certain periods. You could only search for courses that overlap the period you were searching; e.g. the problem was: "I want to see courses only in period 1, not courses that are in period 1 AND 1-2". This made my life much harder when trying to plan my courses ahead of time. Thus, I created a better way to search for courses at my university. The tool doesn't work for *you* as the university didn't allow me to publish the course data, but you can see the pipelines that I've created.
+
+<center><img src="images/course_figure_cmd.png" width="600" height="auto"/></center>
 
 ---
 
