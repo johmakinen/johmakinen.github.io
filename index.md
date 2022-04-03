@@ -9,13 +9,15 @@ This portfolio is a compilation of projects and notebooks which I have created f
  -->
 ## Stand-alone projects
 
-### Automatic Data Imputer app
-#### [Work in progress, not deployed yet]
-[![github_link](https://img.shields.io/badge/-Github-blueviolet?logo=github&logoColor=white)](https://github.com/johmakinen/AutoImputer)
+### Automatic Data Imputer app [Work in progress]
+[![github_link](https://img.shields.io/badge/-Github-blueviolet?logo=github&logoColor=white)](https://github.com/johmakinen/AutoImputer)[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/johmakinen/autoimputer/main/app.py)
 
-Imputing missing values is a common task for people working with data. To ease this, I created an app where users can impute their data using simple Streamlit app, without spending too much time on data wrangling, or needing to learn programming.
+Imputing missing values is a common task for people working with data. To ease this, I created an app where users can impute their data using simple and complex models. This allows users to focus on more important problems than data wrangling and setting up python environments. At the moment, there are two models implemented: SimpleImputer which fills missing values with the column mean, median or mode, and XGBImputer which uses XGBoost for learning and predicting the missing values. Be aware that this work is still in progress and slow imputation and timeouts are to be expected, especially for large datasets.
 
-<!-- <center><img src="images/portfolio_opt.png" width="600" height="auto"/></center> -->
+![AutoImputer video](images/app_video.gif)
+
+
+
 
 --- 
 
