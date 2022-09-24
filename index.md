@@ -76,6 +76,16 @@ I was not content with the data on house prices available in Finland, and thus I
 
 ---
 
+### Receipt reader
+[![github_link](https://img.shields.io/badge/-Github-blueviolet?logo=github&logoColor=white)](https://github.com/johmakinen/receipt-reader)
+
+A small Python script that scans a photo/pdf of a shopping receipt, and then extracts the items and the prices. It collects all the information from multiple separate photos into one tab-delimited text file, which can then be easily read and used with other tools. This tool utilises [ASPRISE](http://asprise.com/)'s Optical Character Recognition (OCR) test API. Though the test API is for limited use only, this tool suffices for my monthly receipt gathering and expense monitoring.
+
+<center><img src="images/git_fig_receipt.png" width="600" height="auto"/></center>
+
+
+---
+
 ### Multiple Correspondence Analysis on sleeping pads (MCA)
 [![github_link](https://img.shields.io/badge/-Github-blueviolet?logo=github&logoColor=white)](https://github.com/johmakinen/MCA-on-sleeping-pads/blob/main/MCA_report.pdf)
 
