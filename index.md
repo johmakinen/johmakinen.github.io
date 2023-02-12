@@ -22,6 +22,7 @@ Imputing missing values is a common task for people working with data. To ease t
 --- 
 
 ### Portfolio Optimization
+### Yahoo Finance updated their API which broke this tool (Dec. 2022). Will be fixed when I have the time.
 [![github_link](https://img.shields.io/badge/-Github-blueviolet?logo=github&logoColor=white)](https://github.com/johmakinen/Portfolio-Optimization)[![github_link](https://img.shields.io/badge/-GoogleCloud-blue?logo=googlecloud&logoColor=white)](https://portfolio-optimization-mhsj544yua-lz.a.run.app)
 
 The purpose of this project was to create a simple interactive tool to optimize the asset allocation of a stock portfolio. I wanted to do an automatic data retrieval from Yahoo Finance and optimize the asset portfolio using my knowledge of portfolio optimization and investment science. [Markowitz model](https://en.wikipedia.org/wiki/Markowitz_model) was used for the implementation. Most of the difficulties came from learning frontend development (Flask, JS, HTML) from scratch and from using Google Cloud Platform (GCP).
